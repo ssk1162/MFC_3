@@ -67,22 +67,18 @@ void CMFC연습문제3View::OnDraw(CDC* pDC)
 	{
 	case 0 :
 		pDC->SetTextColor(RGB(0, 0, 0));
-		pDC->TextOut(pDoc->m_nDocX, pDoc->m_nDocY, pDoc->m_strDocText);
 		break;
 	case 1:
 		pDC->SetTextColor(RGB(255, 0, 0));
-		pDC->TextOut(pDoc->m_nDocX, pDoc->m_nDocY, pDoc->m_strDocText);
 		break;
 	case 2:
 		pDC->SetTextColor(RGB(0, 255, 0));
-		pDC->TextOut(pDoc->m_nDocX, pDoc->m_nDocY, pDoc->m_strDocText);
 		break;
 	case 3:
 		pDC->SetTextColor(RGB(0, 0, 255));
-		pDC->TextOut(pDoc->m_nDocX, pDoc->m_nDocY, pDoc->m_strDocText);
 		break;
 	}
-
+	pDC->TextOut(pDoc->m_nDocX, pDoc->m_nDocY, pDoc->m_strDocText);
 	
 	
 }
